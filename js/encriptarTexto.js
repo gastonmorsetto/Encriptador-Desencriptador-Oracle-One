@@ -3,6 +3,8 @@ var texto = document.querySelector("#texto");
 //Tomo valor texto resultante segundo TextArea
 var textoEncriptado = document.querySelector("#respuesta");
 var conta = "";
+//Tomo valor del botón Encriptar
+var botonEncriptar = document.querySelector("#bto-encriptar");
 
 //Funcion para encriptar el texto
 function encriptarTexto(){
@@ -27,3 +29,5 @@ function encriptarTexto(){
 
     textoEncriptado.value = contenedor;
 }
+
+botonEncriptar.addEventListener("click",encriptarTexto);

@@ -4,6 +4,8 @@ var texto = document.querySelector("#texto");
 var textoEncriptado = document.querySelector("#respuesta");
 var conta = "";
 
+var botonDesencriptar = document.querySelector("#bto-desencriptar");
+
 //Funcion para desencriptar el texto
 function desencriptarTexto(){
     var palabra = texto.value;
@@ -32,3 +34,6 @@ function desencriptarTexto(){
 
     textoEncriptado.value = contenedor;
 }
+
+
+botonDesencriptar.addEventListener("click",desencriptarTexto);
