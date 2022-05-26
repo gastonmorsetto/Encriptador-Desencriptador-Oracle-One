@@ -44,6 +44,10 @@ body{
     line-height: 150%;
     color: #ffffff;
 }
+/* Atribute PlaceHolder de Input TextArea */
+.texto-area::placeholder { 
+    color: #ffffff; 
+}
 
 /* Goup Button */
 .botones{
